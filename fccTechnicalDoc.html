@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<title>Linux Distros</title>
+	</head>
+	<body>
+    <nav id="navbar">
+      <header>Linux Distros</header>
+      <ul>
+        <a class="nav-link" href="#Linux_Overview" rel="internal"><li>Linux Overview</li></a>
+        <a class="nav-link" href="#Debian_family" rel="internal"><li>Debian Family</li></a>
+        <a class="nav-link" href="#Slackware_spinoffs" rel="internal"><li>Slackware spinoffs</li></a>
+        <a class="nav-link" href="#Red_Hat_family" rel="internal"><li>Red Hat family</li></a>
+        <a class="nav-link" href="#Gentoo_and_Arch" rel="internal"><li>Gentoo and Arch</li></a>
+        <a class="nav-link" href="#Android_generation_and_Others" rel="internal"><li>Android generation and Others</li></a>
+        <a class="nav-link" href="#Coda" rel="internal"><li>Coda</li></a>
+      </ul>
+    </nav>
+		<main id="main-doc">
+      <section class="main-section" id="Linux_Overview">
+				<header>Linux Overview</header>      
+      <p>The information that follows is neither exhaustive nor authoritative. It is just personal experiences, observations and research gathered by this author in his continual learning process about Linux OS's. Some of this data will be incomplete and perhaps even misleading or wrong; this is entirely unintentional. As stated earlier this is the briefest of Polar 50,000 ft. views of Linux and is only meant as a starting point to pique the reader's curiosity. If any one of these distributions or even Linux as a whole interest you, please further research and try it out.  After all, it is free to download and install. Part of the fun of learning and using a Linux OS is breaking it and putting it back together again. Enjoy.</p>
+        </section>
+			<section class="main-section" id="Debian_family">
+				<header>Debian family</header>
+        <p>Discussion of the Debian family of linux ditributions has to start with the Linux giant Ubuntu from Canonical. Basically, Debian is made up the Ubuntu distros(short for distribution of "flavor" of Linux) along with the Knoppix branch of distros with a myriad of other distros that are Debian based but not directly tied to Ubuntu/Canonical or Knoppix.</p>
+        <p>The Ubuntu/Canonical family of Linux distros is perhaps the most widely used of the Linux distros; at least for the the newer Linux user, since it has such a Microsoft Windows look and feel. These Ubuntu based distros are built in such a way that terminal, or command line, use is not mandatory.  Updates and Upgrades along with downloading and installing new software can all be done in a handy Software window which can be brought up through a icon hyperlink in the toolbar. This toolbar also contains a start button type icon, similar to a Microsoft windows system. If one wants to use command line(terminal in Linux speak), that is possible too and example terminal Linux bash code will follow later.</p>
+        <code>sudo apt-get update</code>
+        <h2>Debian distros</h2>
+        <ul>
+          <li>Knoppix</li>
+          <li>Ubuntu</li>
+          <li>Kubuntu</li>
+          <li>Xubuntu</li>
+          <li>Lubuntu</li>
+          <li>Linux Mint</li>
+        </ul>
+        <p>This author started on Ubuntu himself and was able to slowly learn and explore the Linux world.  Other distros that area interesting are Linux Mint and Bodhi Linux, Kubuntu, and Lubuntu.  the last three are minimalist Ubuntu based distros that are built for smaller, older machines. Indeed, an old XP machine is still running strong on Lubuntu and an old netbook was revived via Bodhi Linux.</p>
+			</section>
+			<section class="main-section" id="Slackware_spinoffs">
+				<header>Slackware spinoffs</header>
+        <p>Not much can this author tell you Slackware as this family of distros has not yet been tried personally. The package managment system for Slackware is pkgtools. A bit of research reveals these distros to strive to Unix standards and feel, and this fact piques this author's curiosity. If one is to do Linux, might as well use a distro version close to Unix, hey? With the twin aims of stability and simplicity, this family of distros is worth a try. </p>
+        <code>slackpkg update</code>
+          <p>Worth mentioning here is the another popular Linux branch the SuSE family of distros. Most noteworthy would be Open Suse; as this is used in enterprise/commercial settings. This author has heard positive things about slackware through the years; this is definitely on the bucket list.</p>
+        <code>zypper update</code>
+			</section>
+			<section class="main-section" id="Red_Hat_family">
+				<header>Red Hat family</header>
+        <p>What more can be said than RHEL.  Yes, it seems with all the countless number of Linux distros out there; it is the One, Red Hat Enterprise Linux which stands above all else like a Colossus in the business and commercial world. It is this distribution that has the most popular and respected certifications to get well paying system administrator jobs.</p>
+        <code>sudo dnf/yum update</code>
+        <h2>Red Hat distros</h2>
+        <ul>
+          <li>Red Hat Enterprise Linux</li>
+          <li>CentOS</li>
+          <li>Fedora</li>
+          <li>Mandriva</li>
+          <li>Mageia</li>
+          <li>ROSA</li>
+        </ul>
+        <p>Fedora is the current OS for this author.  It is the buggy, cutting edge distro of the Red Hat family.  If one were to want the client side or "free" distro of RHEL, then CentOS would be the choice. Fedora has been a fun journey of learning and exploration. Once, this author broke the Xserver back in Fedora 25/26?. After some good research and learning about the Xshell and some of the underlying boot loader processes; this author found a way to restore the corrupted bin files, or rather, the links to start the Xserver and gui processes again. In a odd way, it seems this author has come full circle again in considering to change into CentOS. CentOS was the very first taste of Linux that this author took back in a class at school.</p>      
+      </section>
+			<section class="main-section" id="Gentoo_and_Arch">
+				<header>Gentoo and Arch</header>
+        <p>Gentoo is  said to be the Linux for advanced linux users, the sys admins and developers.  It's package management system Portage allows for numerous custom optimizations for the user and the ability to turn off unwanted specifications for any software package.</p>
+        <code>emerge --sync</code>
+        <p>In a very similar way,  Arch and its various distros like Manjaro allow for much customization of the the Linux enviroment for the user. Pacman is the Arch Linux package manager. It is a stable, secure and fast and the ability to customize with the AUR Arch User repository makes it a a popular selection of the Linux community.</p>
+        <code>pacman -Syu</code>
+			</section>
+			<section class="main-section" id="Android_generation_and_Others">
+				<header>Android generation and Others</header>
+        <p>The popular mobile Android mobile phones have a heart of the Linux kernel, but there is plenty of dispute over whether these Android devices house a genuine Linux OS or not. Here is an interesting discussion about this, <a href="https://www.androidauthority.com/android-linux-784964/" target="_blank">Is Android Linux</a> you can decide for yourself how to classify these Android systems.</p>
+        <p>Other distros of note are Chrome OS; Red Hat derivatives Oracle and Scientific Linux; Mandriva derivatives such as Mageia and ROSA; and finally the famous penetration testing platform Kali Linux.</p>
+			</section>
+      <section class="main-section" id="Coda">
+				<header>Coda</header>
+        <p>As stated earlier, this has been the briefest and most superficial of looks at the vast world of Linux operating systems. Please use this as general exploratory information to possibly whet your appetite for the Linux world. The Linux community is growing and friendly and helpful; just be courteous and show a geniune sense of trying to learn and use any of the Linux distributions that you choose too. Links for reference to the distributions covered will follow. Please consider downloading and installing Ubuntu or one of the other beginner-level Linux OS's and experiment on an old machine you have perhaps. Good luck and thanks for reading.</p>
+        <h2>Linux distro links</h2>
+        <ul id="links">
+          <a href="https://www.linux.org/" target="_blank"><li>Linux</li></a>
+          <a href="https://www.ubuntu.com/" target="_blank"><li>Ubuntu</li></a>
+          <a href="https://linuxmint.com/" target="_blank"><li>Mint</li></a>
+          <a href="http://www.slackware.com/" target="_blank"><li>Slackware</li></a>
+          <a href="https://www.centos.org/" target="_blank"><li>CentOS</li></a>
+          <a href="https://getfedora.org/" target="_blank"><li>Fedora</li></a>
+          <a href="https://manjaro.org/" target="_blank"><li>Manjaro</li></a>
+        </ul>        
+      </section> 
+      <p id="copyRight">Copyright &#169; 2019. Written and Coded by Gene McGrath. All Rights Reserved</p>
+		</main>
+	</body>
+</html>
